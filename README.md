@@ -17,14 +17,15 @@ This project was created using `bun init` in bun v1.3.8. [Bun](https://bun.com) 
 
 # Praktikum Modul 3 – Tailwind CSS
 
-## Praktikum 2 – Perbedaan Tailwind CSS v3 dan v4
+## Praktikum 2 – Perbedaan Tailwind CSS v3 vs v4
 
-1. **Konfigurasi**
-   Tailwind v3 bergantung pada file tailwind.config.js untuk tema dan utilities kustom, sementara v4 menggunakan directive @theme dan CSS variables langsung di CSS untuk kemudahan integrasi.
+1. **Variabel CSS Modern**
+   v3 Menggunakan nilai statis yang di-generate ke dalam class.
+   v4 Sekarang menjadi CSS-variable-first. Semua tema (warna, spacing, dll) tersedia sebagai variabel CSS asli di browser.
 
-2. **Performa**
-   v4 memiliki engine lebih kecil dan build time lebih cepat berkat optimasi CSS variables serta incremental builds, dibandingkan v3 yang lebih lambat pada proyek besar.
+2. **Ukuran Paket (Package Size)**
+   Tailwind v4 jauh lebih ringan secara internal:
+   Ukuran paket yang diinstal berkurang lebih dari 35%.
 
 ## Praktikum 4 – Box Model Tailwind CSS
-
-Jika memberi warna pada latar belakang elemen bg-blue-600, komponen model box yang terpengaruh adalah content box dan padding box.
+Jika memberi warna pada latar belakang elemen bg-blue-600, bagian type box yang terpengaruh adalah content box & padding box.
